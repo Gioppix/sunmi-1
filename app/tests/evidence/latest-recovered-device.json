@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "events": [
+    {
+      "type": "hello",
+      "protocol": 1,
+      "version": "1.0",
+      "model": "V2",
+      "max_pending": 64,
+      "result_ack": true
+    },
+    {
+      "id": "lifecycle-1790545496-interrupted",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "outcome_unknown",
+        "message": "App restarted during job; inspect receipt before retrying with a new id"
+      }
+    },
+    {
+      "id": "lifecycle-1790545496-queued",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "lifecycle-1790545496-interrupted",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "outcome_unknown",
+        "message": "App restarted during job; inspect receipt before retrying with a new id"
+      }
+    }
+  ]
+}

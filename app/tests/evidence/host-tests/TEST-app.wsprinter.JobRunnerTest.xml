@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.wsprinter.JobRunnerTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-09-27T18:40:16" hostname="Giovannis-MacBook-Pro.local" time="1.927">
+  <properties/>
+  <testcase name="paperOutStopsBeforeAnySubmission" classname="app.wsprinter.JobRunnerTest" time="0.839"/>
+  <testcase name="qrModuleSizeDoesNotAlterTextFont" classname="app.wsprinter.JobRunnerTest" time="0.006"/>
+  <testcase name="binderDeathNeverClaimsNoPrintOrRetries" classname="app.wsprinter.JobRunnerTest" time="0.006"/>
+  <testcase name="individualCommandFailureSurvivesSuccessfulCommit" classname="app.wsprinter.JobRunnerTest" time="0.004"/>
+  <testcase name="physicalFailureIsNotSuccess" classname="app.wsprinter.JobRunnerTest" time="0.005"/>
+  <testcase name="acceptanceWithoutPrintCompletionIsUnknown" classname="app.wsprinter.JobRunnerTest" time="1.015"/>
+  <testcase name="transactionWaitsForPrintAndFlushesOnce" classname="app.wsprinter.JobRunnerTest" time="0.013"/>
+  <testcase name="cleanupFailureDoesNotEraseConfirmedPhysicalResult" classname="app.wsprinter.JobRunnerTest" time="0.01"/>
+  <testcase name="leftoverManualBufferIsRejectedBeforeSubmission" classname="app.wsprinter.JobRunnerTest" time="0.006"/>
+  <testcase name="queryReturnsNativeValueWithoutPrint" classname="app.wsprinter.JobRunnerTest" time="0.005"/>
+  <testcase name="manualBufferDefersCallbacksUntilCommit" classname="app.wsprinter.JobRunnerTest" time="0.006"/>
+  <testcase name="lateInvalidCommandDoesNotPrintLeadingText" classname="app.wsprinter.JobRunnerTest" time="0.005"/>
+  <testcase name="dryRunNeverAccessesPrinter" classname="app.wsprinter.JobRunnerTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

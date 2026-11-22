@@ -1,0 +1,724 @@
+{
+  "ok": true,
+  "error": null,
+  "events": [
+    {
+      "type": "hello",
+      "protocol": 1,
+      "version": "1.0",
+      "model": "V2",
+      "max_pending": 64,
+      "result_ack": true
+    },
+    {
+      "id": "opaque/1790533032",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": 9223372036854775807,
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": {
+        "nested": [
+          1,
+          "x",
+          null
+        ]
+      },
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": false,
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": null,
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "1790533032-status",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-status",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-status",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "1790533032-queries",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queries",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queries",
+      "type": "progress",
+      "stage": "running",
+      "commands": 5
+    },
+    {
+      "id": "1790533032-queries",
+      "type": "progress",
+      "stage": "command",
+      "index": 0,
+      "total": 5,
+      "state": "accepted"
+    },
+    {
+      "id": "1790533032-queries",
+      "type": "progress",
+      "stage": "command",
+      "index": 1,
+      "total": 5,
+      "state": "accepted"
+    },
+    {
+      "id": "1790533032-queries",
+      "type": "progress",
+      "stage": "command",
+      "index": 2,
+      "total": 5,
+      "state": "accepted"
+    },
+    {
+      "id": "1790533032-queries",
+      "type": "progress",
+      "stage": "command",
+      "index": 3,
+      "total": 5,
+      "state": "accepted"
+    },
+    {
+      "id": "1790533032-queries",
+      "type": "progress",
+      "stage": "command",
+      "index": 4,
+      "total": 5,
+      "state": "accepted"
+    },
+    {
+      "id": "1790533032-queries",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "confirmation": "commands_accepted",
+        "commands": [
+          {
+            "return": "4.4.1"
+          },
+          {
+            "return": "POS-V2\n"
+          },
+          {
+            "return": 1
+          },
+          {
+            "callback": {
+              "returned": "64"
+            }
+          },
+          {
+            "return": 1
+          }
+        ]
+      }
+    },
+    {
+      "id": "1790533032-validate",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-validate",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-validate",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 9,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-bad0",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-bad0",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-bad0",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "lines must be in 0..255",
+        "index": 1
+      }
+    },
+    {
+      "id": "1790533032-bad1",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-bad1",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-bad1",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "text must be a string",
+        "index": 1
+      }
+    },
+    {
+      "id": "1790533032-bad2",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-bad2",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-bad2",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "Unknown printer method or argument count: asBinder",
+        "index": 1
+      }
+    },
+    {
+      "id": "1790533032-bad3",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-bad3",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-bad3",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "argument 0 must be in -2147483648..2147483647",
+        "index": 1
+      }
+    },
+    {
+      "id": "1790533032-bad4",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-bad4",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-bad4",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "image must be <=576 dots wide and <=240000 pixels; split larger images",
+        "index": 1
+      }
+    },
+    {
+      "id": "1790533032-bad5",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-bad5",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-bad5",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "size must be in 1..16",
+        "index": 1
+      }
+    },
+    {
+      "id": "1790533032-bad6",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-bad6",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-bad6",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "byte must be in -128..255",
+        "index": 1
+      }
+    },
+    {
+      "id": "1790533032-bad7",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-bad7",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-bad7",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "columns arrays must have equal nonzero lengths",
+        "index": 1
+      }
+    },
+    {
+      "id": "1790533032-bad8",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-bad8",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-bad8",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "exitPrinterBuffer requires transaction:false",
+        "index": 1
+      }
+    },
+    {
+      "id": "1790533032-bad9",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-bad9",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-bad9",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "bold must be boolean",
+        "index": 1
+      }
+    },
+    {
+      "id": null,
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "bad_request",
+        "message": "Expected ':' after invalid at character 8 of {invalid"
+      }
+    },
+    {
+      "id": "1790533032-queue0",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue0",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue1",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue0",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue1",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue2",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue1",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue2",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue3",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue2",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue4",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue3",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue5",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue3",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue6",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue4",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue4",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue5",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue7",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue5",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue8",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue9",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue6",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue10",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue6",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue7",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue7",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue11",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-queue8",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue8",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue9",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue9",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue10",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue10",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-queue11",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-queue11",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "validated": 1,
+        "printed": false
+      }
+    },
+    {
+      "id": "1790533032-duplicate",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-duplicate",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-duplicate",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "1790533032-duplicate",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "1790533032-duplicate",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "id_conflict",
+        "message": "This id already belongs to a different job"
+      }
+    },
+    {
+      "id": "1790533032-replay",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "1790533032-replay",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "1790533032-replay",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "type": "hello",
+      "protocol": 1,
+      "version": "1.0",
+      "model": "V2",
+      "max_pending": 64,
+      "result_ack": true
+    },
+    {
+      "id": "1790533032-replay",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "1790533032-replay",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    }
+  ]
+}

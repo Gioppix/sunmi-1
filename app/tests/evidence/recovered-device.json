@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "events": [
+    {
+      "type": "hello",
+      "protocol": 1,
+      "version": "1.0",
+      "model": "V2",
+      "max_pending": 64,
+      "result_ack": true
+    },
+    {
+      "id": "lifecycle-1790533468-interrupted",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "outcome_unknown",
+        "message": "App restarted during job; inspect receipt before retrying with a new id"
+      }
+    },
+    {
+      "id": "lifecycle-1790533468-queued",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 2,
+        "state_name": "initializing",
+        "model": "",
+        "service_version": "4.4.1",
+        "firmware": "",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "lifecycle-1790533468-interrupted",
+      "type": "result",
+      "ok": false,
+      "error": {
+        "code": "outcome_unknown",
+        "message": "App restarted during job; inspect receipt before retrying with a new id"
+      }
+    }
+  ]
+}

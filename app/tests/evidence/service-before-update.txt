@@ -1,0 +1,13 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{fab3ec1 u0 app.wsprinter/.PrintService}
+    intent={cmp=app.wsprinter/.PrintService}
+    packageName=app.wsprinter
+    processName=app.wsprinter
+    baseDir=/data/app/app.wsprinter-1/base.apk
+    dataDir=/data/user/0/app.wsprinter
+    app=ProcessRecord{97804f9 6790:app.wsprinter/u0a87}
+    isForeground=true foregroundId=1 foregroundNoti=Notification(pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE)
+    createTime=-1m19s276ms startingBgTimeout=--
+    lastActivity=-58s47ms restartTime=-1m19s276ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=false callStart=true lastStartId=2

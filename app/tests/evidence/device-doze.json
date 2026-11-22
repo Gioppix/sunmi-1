@@ -1,0 +1,54 @@
+{
+  "ok": false,
+  "seconds": 180,
+  "forced_doze": true,
+  "events": [
+    {
+      "type": "hello",
+      "protocol": 1,
+      "version": "1.0",
+      "model": "V2",
+      "max_pending": 64,
+      "result_ack": true
+    },
+    {
+      "id": "idle-1790717005-length-before",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717005-length-before",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717005-length-before",
+      "type": "progress",
+      "stage": "running",
+      "commands": 1
+    },
+    {
+      "id": "idle-1790717005-length-before",
+      "type": "progress",
+      "stage": "command",
+      "index": 0,
+      "total": 1,
+      "state": "accepted"
+    },
+    {
+      "id": "idle-1790717005-length-before",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "confirmation": "submitted",
+        "commands": [
+          {
+            "callback": {
+              "returned": "0"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

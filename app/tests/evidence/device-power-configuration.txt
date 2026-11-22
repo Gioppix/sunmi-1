@@ -1,0 +1,2 @@
+  mLightEnabled=false  mDeepEnabled=false
+  mMotionSensor=null

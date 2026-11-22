@@ -1,0 +1,654 @@
+{
+  "ok": true,
+  "seconds": 180,
+  "forced_doze": false,
+  "events": [
+    {
+      "type": "hello",
+      "protocol": 1,
+      "version": "1.0",
+      "model": "V2",
+      "max_pending": 64,
+      "result_ack": true
+    },
+    {
+      "id": "idle-1790717052-length-before",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-length-before",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-length-before",
+      "type": "progress",
+      "stage": "running",
+      "commands": 1
+    },
+    {
+      "id": "idle-1790717052-length-before",
+      "type": "progress",
+      "stage": "command",
+      "index": 0,
+      "total": 1,
+      "state": "accepted"
+    },
+    {
+      "id": "idle-1790717052-length-before",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "confirmation": "submitted",
+        "commands": [
+          {
+            "callback": {
+              "returned": "0"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-0",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-0",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-0",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-0",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-1",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-1",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-1",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-1",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-2",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-2",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-2",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-2",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-3",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-3",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-3",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-3",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-4",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-4",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-4",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-4",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-5",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-5",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-5",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-5",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-6",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-6",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-6",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-6",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-7",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-7",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-7",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-7",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-8",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-8",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-8",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-8",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-9",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-9",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-9",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-9",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-10",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-10",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-10",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-10",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-11",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-11",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-11",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-11",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-12",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-12",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-12",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-12",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-13",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-13",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-13",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-13",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-14",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-14",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-14",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-14",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-15",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-15",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-15",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-15",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-16",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-16",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-16",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-16",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-ping-17",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "pong": true
+      }
+    },
+    {
+      "id": "idle-1790717052-status-17",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-status-17",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-status-17",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "idle-1790717052-length-after",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "idle-1790717052-length-after",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "idle-1790717052-length-after",
+      "type": "progress",
+      "stage": "running",
+      "commands": 1
+    },
+    {
+      "id": "idle-1790717052-length-after",
+      "type": "progress",
+      "stage": "command",
+      "index": 0,
+      "total": 1,
+      "state": "accepted"
+    },
+    {
+      "id": "idle-1790717052-length-after",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "confirmation": "submitted",
+        "commands": [
+          {
+            "callback": {
+              "returned": "0"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "length_before": "0",
+  "samples": 18,
+  "length_after": "0"
+}

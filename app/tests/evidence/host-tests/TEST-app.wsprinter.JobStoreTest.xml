@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.wsprinter.JobStoreTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-27T18:40:54" hostname="Giovannis-MacBook-Pro.local" time="0.824">
+  <properties/>
+  <testcase name="restartOnlyResumesJobsNeverStarted" classname="app.wsprinter.JobStoreTest" time="0.445"/>
+  <testcase name="typedIdsAndReorderedObjectsRetainIdentity" classname="app.wsprinter.JobStoreTest" time="0.007"/>
+  <testcase name="fullUnacknowledgedJournalBackpressuresInsteadOfLosingResults" classname="app.wsprinter.JobStoreTest" time="0.211"/>
+  <testcase name="acknowledgmentsCannotDropQueuedJobsOrOtherEndpoints" classname="app.wsprinter.JobStoreTest" time="0.008"/>
+  <testcase name="retentionEvictsOnlyAcknowledgedResults" classname="app.wsprinter.JobStoreTest" time="0.153"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

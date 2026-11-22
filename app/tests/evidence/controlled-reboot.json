@@ -1,0 +1,60 @@
+{
+  "ok": false,
+  "state": "waiting_for_device",
+  "events": [
+    {
+      "type": "hello",
+      "protocol": 1,
+      "version": "1.0",
+      "model": "V2",
+      "max_pending": 64,
+      "result_ack": true
+    },
+    {
+      "id": "lifecycle-1790545496-before",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "lifecycle-1790545496-before",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "lifecycle-1790545496-before",
+      "type": "result",
+      "ok": true,
+      "data": {
+        "state": 1,
+        "state_name": "normal",
+        "model": "POS-V2\n",
+        "service_version": "4.4.1",
+        "firmware": "1.02\n",
+        "paper_dots": 384
+      }
+    },
+    {
+      "id": "lifecycle-1790545496-interrupted",
+      "type": "progress",
+      "stage": "queued"
+    },
+    {
+      "id": "lifecycle-1790545496-interrupted",
+      "type": "progress",
+      "stage": "validating"
+    },
+    {
+      "id": "lifecycle-1790545496-interrupted",
+      "type": "progress",
+      "stage": "running",
+      "commands": 1
+    },
+    {
+      "id": "lifecycle-1790545496-queued",
+      "type": "progress",
+      "stage": "queued"
+    }
+  ],
+  "error": "ADB did not return within 180 seconds after reboot; test process exited",
+  "resume_prefix": "lifecycle-1790545496"
+}

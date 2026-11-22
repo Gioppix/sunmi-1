@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="app.wsprinter.SocketLinkTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-09-27T18:40:18" hostname="Giovannis-MacBook-Pro.local" time="35.439">
+  <properties/>
+  <testcase name="exchangesFramesAndNeverSendsToWrongEndpoint" classname="app.wsprinter.SocketLinkTest" time="0.18"/>
+  <testcase name="reconnectsAfterServerClose" classname="app.wsprinter.SocketLinkTest" time="0.078"/>
+  <testcase name="remainsConnectedPastImageDownloadDeadline" classname="app.wsprinter.SocketLinkTest" time="35.049"/>
+  <testcase name="oversizedIncomingJobIsRejectedBeforeDelivery" classname="app.wsprinter.SocketLinkTest" time="0.067"/>
+  <testcase name="binaryFramesAreRejected" classname="app.wsprinter.SocketLinkTest" time="0.064"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Sep 27, 2026 8:40:18 PM okhttp3.mockwebserver.MockWebServer$2 execute
+INFO: MockWebServer[61071] starting to accept connections
+Sep 27, 2026 8:40:18 PM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFO: MockWebServer[61071] done accepting connections: Socket closed
+Sep 27, 2026 8:40:18 PM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFO: MockWebServer[61071] received request: GET /test?secret=not-for-logs HTTP/1.1 and responded: HTTP/1.1 101 Switching Protocols
+Sep 27, 2026 8:40:18 PM okhttp3.mockwebserver.MockWebServer$2 execute
+INFO: MockWebServer[61073] starting to accept connections
+Sep 27, 2026 8:40:18 PM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFO: MockWebServer[61073] received request: GET /test?secret=not-for-logs HTTP/1.1 and responded: HTTP/1.1 101 Switching Protocols
+Sep 27, 2026 8:40:18 PM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFO: MockWebServer[61073] done accepting connections: Socket closed
+Sep 27, 2026 8:40:18 PM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFO: MockWebServer[61073] received request: GET /test?secret=not-for-logs HTTP/1.1 and responded: HTTP/1.1 101 Switching Protocols
+Sep 27, 2026 8:40:18 PM okhttp3.mockwebserver.MockWebServer$2 execute
+INFO: MockWebServer[61076] starting to accept connections
+Sep 27, 2026 8:40:53 PM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFO: MockWebServer[61076] received request: GET /test?secret=not-for-logs HTTP/1.1 and responded: HTTP/1.1 101 Switching Protocols
+Sep 27, 2026 8:40:53 PM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFO: MockWebServer[61076] done accepting connections: Socket closed
+Sep 27, 2026 8:40:53 PM okhttp3.mockwebserver.MockWebServer$2 execute
+INFO: MockWebServer[61132] starting to accept connections
+Sep 27, 2026 8:40:53 PM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFO: MockWebServer[61132] received request: GET /test?secret=not-for-logs HTTP/1.1 and responded: HTTP/1.1 101 Switching Protocols
+Sep 27, 2026 8:40:53 PM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFO: MockWebServer[61132] done accepting connections: Socket closed
+Sep 27, 2026 8:40:54 PM okhttp3.mockwebserver.MockWebServer$2 execute
+INFO: MockWebServer[61134] starting to accept connections
+Sep 27, 2026 8:40:54 PM okhttp3.mockwebserver.MockWebServer$3 processOneRequest
+INFO: MockWebServer[61134] received request: GET /test?secret=not-for-logs HTTP/1.1 and responded: HTTP/1.1 101 Switching Protocols
+Sep 27, 2026 8:40:54 PM okhttp3.mockwebserver.MockWebServer$2 acceptConnections
+INFO: MockWebServer[61134] done accepting connections: Socket closed
+]]></system-err>
+</testsuite>

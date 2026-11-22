@@ -1,0 +1,107 @@
+--------- beginning of system
+--------- beginning of main
+09-27 23:41:41.354  6790  6790 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:41:41.370  6790  6790 I WsPrinter: WebSocket failed: SocketException
+09-27 23:41:57.867  6790  6790 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:41:57.885  6790  6790 I WsPrinter: WebSocket failed: SocketException
+09-27 23:42:28.105  6790  6790 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:42:28.118  6790  6790 I WsPrinter: WebSocket failed: SocketException
+09-27 23:42:58.403  6790  6790 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:42:58.431  6790  6790 I WsPrinter: WebSocket connected
+09-27 23:42:58.965  6790  6838 I WsPrinter: job 1790545354-status: ok
+09-27 23:42:59.210  6790  6838 I WsPrinter: job 1790545354-queries: ok
+09-27 23:42:59.298  6790  6838 I WsPrinter: job 1790545354-validate: ok
+09-27 23:42:59.370  6790  6838 I WsPrinter: job 1790545354-bad0: {"code":"bad_request","message":"lines must be in 0..255","index":1}
+09-27 23:42:59.477  6790  6838 I WsPrinter: job 1790545354-bad1: {"code":"bad_request","message":"text must be a string","index":1}
+09-27 23:42:59.548  6790  6838 I WsPrinter: job 1790545354-bad2: {"code":"bad_request","message":"Unknown printer method or argument count: asBinder","index":1}
+09-27 23:42:59.681  6790  6838 I WsPrinter: job 1790545354-bad3: {"code":"bad_request","message":"argument 0 must be in -2147483648..2147483647","index":1}
+09-27 23:42:59.763  6790  6838 I WsPrinter: job 1790545354-bad4: {"code":"bad_request","message":"image must be <=576 dots wide and <=240000 pixels; split larger images","index":1}
+09-27 23:42:59.835  6790  6838 I WsPrinter: job 1790545354-bad5: {"code":"bad_request","message":"size must be in 1..16","index":1}
+09-27 23:42:59.935  6790  6838 I WsPrinter: job 1790545354-bad6: {"code":"bad_request","message":"byte must be in -128..255","index":1}
+09-27 23:43:00.019  6790  6838 I WsPrinter: job 1790545354-bad7: {"code":"bad_request","message":"columns arrays must have equal nonzero lengths","index":1}
+09-27 23:43:00.108  6790  6838 I WsPrinter: job 1790545354-bad8: {"code":"bad_request","message":"exitPrinterBuffer requires transaction:false","index":1}
+09-27 23:43:00.193  6790  6838 I WsPrinter: job 1790545354-bad9: {"code":"bad_request","message":"bold must be boolean","index":1}
+09-27 23:43:00.216  6790  8653 I WsPrinter: request rejected: bad_request
+09-27 23:43:00.310  6790  6838 I WsPrinter: job 1790545354-queue0: ok
+09-27 23:43:00.372  6790  6838 I WsPrinter: job 1790545354-queue1: ok
+09-27 23:43:00.456  6790  6838 I WsPrinter: job 1790545354-queue2: ok
+09-27 23:43:00.511  6790  6838 I WsPrinter: job 1790545354-queue3: ok
+09-27 23:43:00.646  6790  6838 I WsPrinter: job 1790545354-queue4: ok
+09-27 23:43:00.709  6790  6838 I WsPrinter: job 1790545354-queue5: ok
+09-27 23:43:00.762  6790  6838 I WsPrinter: job 1790545354-queue6: ok
+09-27 23:43:00.833  6790  6838 I WsPrinter: job 1790545354-queue7: ok
+09-27 23:43:00.899  6790  6838 I WsPrinter: job 1790545354-queue8: ok
+09-27 23:43:00.969  6790  6838 I WsPrinter: job 1790545354-queue9: ok
+09-27 23:43:01.027  6790  6838 I WsPrinter: job 1790545354-queue10: ok
+09-27 23:43:01.049  6790  6838 I WsPrinter: job 1790545354-queue11: ok
+09-27 23:43:01.133  6790  6838 I WsPrinter: job 1790545354-duplicate: ok
+09-27 23:43:01.217  6790  8653 I WsPrinter: request rejected: id_conflict
+09-27 23:43:01.293  6790  6838 I WsPrinter: job 1790545354-replay: ok
+09-27 23:43:01.307  6790  6790 I WsPrinter: WebSocket failed: ProtocolException
+09-27 23:43:02.724  6790  6790 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:02.746  6790  6790 I WsPrinter: WebSocket connected
+09-27 23:43:04.087  6790  6790 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:04.103  6790  6790 I WsPrinter: WebSocket failed: IOException
+09-27 23:43:06.556  6790  6790 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:06.564  6790  6790 I WsPrinter: WebSocket failed: IOException
+09-27 23:43:14.801  9167  9167 I WsPrinter: foreground service started
+09-27 23:43:14.809  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:15.180  9167  9167 I WsPrinter: printer service connected
+09-27 23:43:15.318  9167  9167 I WsPrinter: WebSocket failed: IOException
+09-27 23:43:16.428  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:16.442  9167  9167 I WsPrinter: WebSocket failed: IOException
+09-27 23:43:16.852  9167  9167 I WsPrinter: startup broadcast: android.intent.action.MY_PACKAGE_REPLACED
+09-27 23:43:16.866  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:16.881  9167  9167 I WsPrinter: WebSocket failed: IOException
+09-27 23:43:17.956  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:17.979  9167  9167 I WsPrinter: WebSocket failed: IOException
+09-27 23:43:20.190  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:20.208  9167  9167 I WsPrinter: WebSocket failed: IOException
+09-27 23:43:24.547  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:24.567  9167  9167 I WsPrinter: WebSocket failed: IOException
+09-27 23:43:32.655  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:32.666  9167  9167 I WsPrinter: WebSocket failed: SocketException
+09-27 23:43:49.032  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:49.065  9167  9167 I WsPrinter: WebSocket connected
+09-27 23:43:49.595  9167  9187 I WsPrinter: job 1790545429-status: ok
+09-27 23:43:49.794  9167  9187 I WsPrinter: job 1790545429-queries: ok
+09-27 23:43:49.878  9167  9187 I WsPrinter: job 1790545429-validate: ok
+09-27 23:43:49.952  9167  9187 I WsPrinter: job 1790545429-bad0: {"code":"bad_request","message":"lines must be in 0..255","index":1}
+09-27 23:43:50.012  9167  9187 I WsPrinter: job 1790545429-bad1: {"code":"bad_request","message":"text must be a string","index":1}
+09-27 23:43:50.114  9167  9187 I WsPrinter: job 1790545429-bad2: {"code":"bad_request","message":"Unknown printer method or argument count: asBinder","index":1}
+09-27 23:43:50.230  9167  9187 I WsPrinter: job 1790545429-bad3: {"code":"bad_request","message":"argument 0 must be in -2147483648..2147483647","index":1}
+09-27 23:43:50.318  9167  9187 I WsPrinter: job 1790545429-bad4: {"code":"bad_request","message":"image must be <=576 dots wide and <=240000 pixels; split larger images","index":1}
+09-27 23:43:50.399  9167  9187 I WsPrinter: job 1790545429-bad5: {"code":"bad_request","message":"size must be in 1..16","index":1}
+09-27 23:43:50.482  9167  9187 I WsPrinter: job 1790545429-bad6: {"code":"bad_request","message":"byte must be in -128..255","index":1}
+09-27 23:43:50.561  9167  9187 I WsPrinter: job 1790545429-bad7: {"code":"bad_request","message":"columns arrays must have equal nonzero lengths","index":1}
+09-27 23:43:50.645  9167  9187 I WsPrinter: job 1790545429-bad8: {"code":"bad_request","message":"exitPrinterBuffer requires transaction:false","index":1}
+09-27 23:43:50.727  9167  9187 I WsPrinter: job 1790545429-bad9: {"code":"bad_request","message":"bold must be boolean","index":1}
+09-27 23:43:50.745  9167  9288 I WsPrinter: request rejected: bad_request
+09-27 23:43:50.831  9167  9187 I WsPrinter: job 1790545429-queue0: ok
+09-27 23:43:50.907  9167  9187 I WsPrinter: job 1790545429-queue1: ok
+09-27 23:43:51.095  9167  9187 I WsPrinter: job 1790545429-queue2: ok
+09-27 23:43:51.188  9167  9187 I WsPrinter: job 1790545429-queue3: ok
+09-27 23:43:51.238  9167  9187 I WsPrinter: job 1790545429-queue4: ok
+09-27 23:43:51.264  9167  9187 I WsPrinter: job 1790545429-queue5: ok
+09-27 23:43:51.306  9167  9187 I WsPrinter: job 1790545429-queue6: ok
+09-27 23:43:51.334  9167  9187 I WsPrinter: job 1790545429-queue7: ok
+09-27 23:43:51.378  9167  9187 I WsPrinter: job 1790545429-queue8: ok
+09-27 23:43:51.404  9167  9187 I WsPrinter: job 1790545429-queue9: ok
+09-27 23:43:51.440  9167  9187 I WsPrinter: job 1790545429-queue10: ok
+09-27 23:43:51.477  9167  9187 I WsPrinter: job 1790545429-queue11: ok
+09-27 23:43:51.596  9167  9187 I WsPrinter: job 1790545429-duplicate: ok
+09-27 23:43:51.687  9167  9288 I WsPrinter: request rejected: id_conflict
+09-27 23:43:51.775  9167  9187 I WsPrinter: job 1790545429-replay: ok
+09-27 23:43:51.787  9167  9167 I WsPrinter: WebSocket failed: ProtocolException
+09-27 23:43:53.110  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:53.132  9167  9167 I WsPrinter: WebSocket connected
+09-27 23:43:54.292  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:54.309  9167  9167 I WsPrinter: WebSocket failed: IOException
+09-27 23:43:56.726  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:43:56.746  9167  9167 I WsPrinter: WebSocket failed: SocketException
+09-27 23:44:01.054  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:44:01.072  9167  9167 I WsPrinter: WebSocket failed: IOException
+09-27 23:44:09.535  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:44:09.555  9167  9167 I WsPrinter: WebSocket failed: SocketException
+09-27 23:44:25.575  9167  9167 I WsPrinter: connecting to ws://127.0.0.1:8765/…
+09-27 23:44:25.592  9167  9167 I WsPrinter: WebSocket failed: SocketException
