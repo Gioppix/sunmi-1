@@ -28,7 +28,7 @@ def event(value: tuple[datetime, str] | None) -> str:
     return "none" if value is None else f"{escape(value[1])}, {duration(value[0])} ago"
 
 
-def render(printer: Printer, repo: str | None, started: datetime, base: str) -> str:
+def render(printer: Printer, repos: list[str], started: datetime, base: str) -> str:
     state = "connected" if printer.conn else "disconnected"
     rows = [
         ("Printer", f"{state} for {duration(printer.state_since)}"),
@@ -37,7 +37,7 @@ def render(printer: Printer, repo: str | None, started: datetime, base: str) -> 
         ("Failed", printer.failed),
         ("Skipped", printer.skipped),
         ("Last result", event(printer.last_result)),
-        ("GitHub repo", escape(repo or "none")),
+        ("GitHub repos", escape(", ".join(repos) or "none")),
         ("Last GitHub check", f"{duration(merged_prs.last_check)} ago" if merged_prs.last_check else "never"),
         ("Last GitHub error", event(merged_prs.last_error)),
         ("Running for", duration(started)),

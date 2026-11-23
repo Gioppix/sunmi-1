@@ -3,6 +3,7 @@ import asyncio
 import hmac
 import logging
 import os
+import re
 import ssl
 from datetime import datetime, timezone
 from http import HTTPStatus
@@ -18,7 +19,7 @@ log = logging.getLogger("main")
 LOOPBACK_HOSTS = {"127.0.0.1", "::1", "localhost"}
 
 
-def routes(base: str, printer: Printer, repo: str | None):
+def routes(base: str, printer: Printer, repos: list[str]):
     """Serves the printer's WebSocket, the status page and its skip action, all under the secret path."""
     started = datetime.now(timezone.utc)
 
@@ -27,7 +28,7 @@ def routes(base: str, printer: Printer, repo: str | None):
         if hmac.compare_digest(path, base.encode()):
             if request.headers.get("Upgrade", "").lower() == "websocket":
                 return None
-            return page.html_response(connection, page.render(printer, repo, started, base))
+            return page.html_response(connection, page.render(printer, repos, started, base))
         if hmac.compare_digest(path, f"{base}/skip".encode()):
             printer.skip_pending()
             return page.redirect(connection, base)
@@ -39,16 +40,17 @@ def routes(base: str, printer: Printer, repo: str | None):
 
 async def main(args: argparse.Namespace, secret: str, tls: ssl.SSLContext | None) -> None:
     printer = Printer(dry_run=args.dry_run)
-    process_request = routes("/" + secret, printer, args.repo)
+    process_request = routes("/" + secret, printer, args.repos)
     async with serve(printer.handler, args.host, args.port, ssl=tls, process_request=process_request):
         log.info("listening on %s://%s:%d/<SUNMI_SECRET>", "wss" if tls else "ws", args.host, args.port)
-        if not args.repo:
+        if not args.repos:
             log.info("no --repo or GITHUB_REPO set, so nothing gets printed")
-        if args.repo:
-            log.info("printing PRs merged into %s after %s", args.repo, args.since.isoformat())
-            await merged_prs.watch(args.repo, printer, args.since, args.interval)
-        else:
             await asyncio.Future()
+        else:
+            log.info("printing PRs merged into %s after %s", ", ".join(args.repos), args.since.isoformat())
+            await asyncio.gather(
+                *(merged_prs.watch(repo, printer, args.since, args.interval) for repo in args.repos)
+            )
 
 
 if __name__ == "__main__":
@@ -67,8 +69,10 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--repo",
-        default=os.environ.get("GITHUB_REPO"),
-        help="owner/name of the GitHub repo whose merged PRs get printed (default: $GITHUB_REPO)",
+        action="append",
+        metavar="OWNER/NAME",
+        help="GitHub repo whose merged PRs get printed; repeat for several "
+        "(default: $GITHUB_REPO, separated by commas or spaces)",
     )
     parser.add_argument(
         "--since",
@@ -79,6 +83,7 @@ if __name__ == "__main__":
     parser.add_argument("--interval", type=float, default=60, help="seconds between GitHub checks")
     parser.add_argument("--dry-run", action="store_true", help="the printer validates jobs without using paper")
     args = parser.parse_args()
+    args.repos = args.repo or [r for r in re.split(r"[,\s]+", os.environ.get("GITHUB_REPO", "")) if r]
 
     secret = os.environ.get("SUNMI_SECRET")
     if not secret:

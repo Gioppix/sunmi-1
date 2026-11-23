@@ -1,11 +1,11 @@
 # Backend
 
-The WebSocket endpoint the Sunmi app connects to. With `--repo`, it prints a receipt for every PR merged into that GitHub repo.
+The WebSocket endpoint the Sunmi app connects to. With `--repo`, it prints a receipt for every PR merged into that GitHub repo. Pass `--repo` more than once, or set `GITHUB_REPO` to a comma- or space-separated list, to watch several repos at once.
 
 ```sh
 export SUNMI_SECRET=$(python3 -c "import secrets; print(secrets.token_urlsafe(32))")
 export GITHUB_TOKEN=github_pat_...
-uv run python main.py --repo owner/name \
+uv run python main.py --repo owner/name --repo owner/other \
   --cert /etc/letsencrypt/live/example.com/fullchain.pem \
   --key /etc/letsencrypt/live/example.com/privkey.pem
 ```
@@ -16,7 +16,7 @@ The certificate must come from a CA that the device's Android 7.1 trusts, becaus
 
 To terminate TLS in a reverse proxy such as Caddy or nginx instead, run with `--host 127.0.0.1` and no `--cert`, and forward the proxy to that port. The backend refuses plain `ws://` on any non-loopback address.
 
-`GITHUB_TOKEN` is ideally a fine-grained personal access token limited to that one repo, with the read-only "Pull requests" permission. A fine-grained token for an organization's repo needs an organization admin's approval. A classic token with the `repo` scope works without approval, but it can read and write every private repo its owner can reach. A public repo also works without a token, but GitHub then allows only 60 requests per hour per IP address, and checking every 60 seconds uses all of them.
+`GITHUB_TOKEN` is ideally a fine-grained personal access token limited to the watched repos, with the read-only "Pull requests" permission. A fine-grained token for an organization's repo needs an organization admin's approval. A classic token with the `repo` scope works without approval, but it can read and write every private repo its owner can reach. A public repo also works without a token, but GitHub then allows only 60 requests per hour per IP address, and checking every 60 seconds uses all of them.
 
 - `--since 2026-11-01` also prints PRs merged after that date. By default only merges after startup are printed. It looks at the 100 most recently updated closed PRs.
 - `--interval 60` sets the seconds between GitHub checks.
